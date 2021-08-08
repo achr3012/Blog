@@ -1,0 +1,9 @@
+
+
+cd /storage/emulated/0/www/Blog
+
+pug -w pug -o ./ -P
+
+sass --watch sass:css
+
+https://www.w3schools.com/w3css/tryw3css_templates_blog.htm

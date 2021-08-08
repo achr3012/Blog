@@ -1,0 +1,165 @@
+@import style
+
+.main
+  .article
+    background-color: #fff
+    margin-bottom: 40px
+    box-shadow: 0px 10px 10px 5px #ccc
+    position: relative
+    .thumb
+      img
+        width: 100%
+    .content
+      padding: 15px
+      .title
+        padding-bottom: 5px
+        font-family: 'Staatliches', cursive
+        font-weight: normal
+        font-size: 2.3em
+        &:hover
+          color: $base-color
+          transition: .2s ease-in-out
+      .info
+        font-size: .9em
+        
+        padding: 5px 0
+        a
+          color: $black-color
+          font-weight: bold
+          text-decoration: none
+          &:hover, &:focus
+            color: $base-color
+        
+      .breaf
+        font-size: .95em
+        line-height: 1.4
+        padding: 10px 0
+      
+      .more
+        display: inline-block
+        margin: 10px 0
+        padding: 15px
+        border: 1px solid #dcdcdc
+        font-weight: bold
+        color: $black-color
+        text-decoration: none
+
+        i
+          transform: scale(.8)
+        &:hover, &:focus
+          color: $base-color
+      
+      .comments
+        position: absolute
+        bottom: 30px
+        right: 20px
+        font-weight: bold
+        span.num
+          background-color: $base-color
+          color: #fff
+          padding: 4px 7px
+  
+  .pagination
+    margin-bottom: 40px
+    ul
+      text-align: center
+      li
+        list-style: none
+        display: inline-block
+        margin: 0 -2px
+        
+        &:first-child a
+          border-left: 2px solid #ccc
+          border-top-left-radius: 5px
+          border-bottom-left-radius: 5px
+          background-color: #eee
+          color: #ccc
+            
+        &:last-child a
+          border-right: 2px solid #ccc
+          border-top-right-radius: 5px
+          border-bottom-right-radius: 5px
+          background-color: #eee
+        a
+          border-top: 2px solid #ccc
+          border-bottom: 2px solid #ccc
+          display: block
+          padding: 10px 15px
+          font-family: 'Arial', sans-serif
+          color: $black-color
+          text-decoration: none
+        a.active, a:hover, a:focus
+          background-color: $base-color
+          color: #fff
+          border-color: $base-color
+        &:first-child a:hover
+          background-color: $white-color
+          color: #ccc
+          border-color: #ccc
+  
+  .contact
+    padding: 10px
+    h2
+      text-align: center
+      font-family: 'Staatliches', cursive
+      font-weight: normal
+      font-size: 2em
+      text-decoration: underline
+      
+    .form-group
+      margin: 15px 0 10px 0
+      label
+        display: block
+        font-weight: bold
+        font-size: .9em
+        padding: 5px 0
+        //position: relative
+        span
+          color: red
+          display: inline-block
+          position: relative
+          top: 5px
+          transform: scale(1.8)
+      input, textarea
+        display: inline-block
+        padding: 10px 15px
+        border: 2.5px solid $black-color
+        transition: .2s ease-in-out
+        width: 100%
+        background-color: #fff
+        &:hover, &:focus
+          border-color: $base-color
+      #lastName
+        margin-top: 5px
+      textarea
+        min-width: 100%
+        max-width: 100%
+        height: 100px
+        max-height: 400px
+    button
+      display: block
+      margin: 10px auto
+      padding: 10px 25px
+      font-weight: bold
+      font-size: 1.1em
+      border-radius: 25px
+      border: 4px solid $base-color
+      color: $black-color
+      transition: .2s ease-in-out
+      i
+        font-size: .8em
+        padding-left: 5px
+      &:hover, &:focus
+        background-color: $base-color
+        color: #fff
+    @media (min-width: 768px)
+      .article .comments .hide
+        display: inline
+      .contact #firstName
+         width: 47%
+         margin-right: 5%
+      .contact #lastName
+        width: 47%
+      .contact textarea
+        min-height: 150px
+      

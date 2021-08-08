@@ -1,0 +1,14 @@
+.main
+  .article
+    h2.title= article.title
+    .info
+      p.by by 
+        a(href="#")= article.author
+      p.in in #{article.date}
+    p.brief= article.brief
+    
+    img(src="images/"+article.thumb alt=article.title).thumb
+    
+    .content !{article.content}
+    
+    p.tags Tags: #{article.tags}

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG.</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway&amp;family=Staatliches&amp;display=swap">
+    <link rel="stylesheet" href="css/fa-all.css">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="container">
+          <div class="logo"><a href="index.html">BLOG.</a></div>
+          <div class="toggle" onclick="addChangeClass(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <ul id="mainMenu">
+          <li><a href="#">LINK #1</a></li>
+          <li><a href="#">LINK 2</a></li>
+          <li><a href="#">LINK #3</a></li>
+          <li><a href="#">LINK 4</a></li>
+          <li><a href="#">LINK #5</a></li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <div class="container">
+          <h1>BLOG.</h1>
+          <p>Welcome to the blog of <span>ACHRAF</span></p>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <div class="main">
+        <section class="articles">
+          <div class="article">
+            <div class="thumb"><img src="images/bridge.jpg"></div>
+            <div class="content">
+              <h2 class="title">TITLE HEADING</h2>
+              <p class="info">Written by <a href="author.html">ACHRAF</a> in June 26, 2021</p>
+              <p class="breaf">Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim.</p><a class="more" href="article1.html">READ MORE <i class="far fa-chevron-double-right"></i></a>
+              <div class="comments"><span class="hide">comments </span><span class="num">5</span></div>
+            </div>
+          </div>
+          <div class="article">
+            <div class="thumb"><img src="images/woods.jpg"></div>
+            <div class="content">
+              <h2 class="title">ANOTHER TITLE HERE</h2>
+              <p class="info">Written by <a href="author.html">ACHRAF</a> in April 7, 2020</p>
+              <p class="breaf">Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim.</p><a class="more" href="article.html">READ MORE <i class="far fa-chevron-double-right"></i></a>
+              <div class="comments"><span class="hide">comments </span><span class="num">17</span></div>
+            </div>
+          </div>
+          <div class="article">
+            <div class="thumb"><img src="images/bridge.jpg"></div>
+            <div class="content">
+              <h2 class="title">YAWEDDI TIRI BARK</h2>
+              <p class="info">Written by <a href="author.html">KAMEL</a> in April 3, 2029</p>
+              <p class="breaf">Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim.</p><a class="more" href="article.html">READ MORE <i class="far fa-chevron-double-right"></i></a>
+              <div class="comments"><span class="hide">comments </span><span class="num">23</span></div>
+            </div>
+          </div>
+          <div class="article">
+            <div class="thumb"><img src="images/woods.jpg"></div>
+            <div class="content">
+              <h2 class="title">DIR TOUR DU MONDE BLA MAT9IS LBOTA</h2>
+              <p class="info">Written by <a href="author.html">ACHRAF</a> in May 7, 2020</p>
+              <p class="breaf">Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim.</p><a class="more" href="article.html">READ MORE <i class="far fa-chevron-double-right"></i></a>
+              <div class="comments"><span class="hide">comments </span><span class="num">301</span></div>
+            </div>
+          </div>
+        </section>
+        <section class="pagination">
+          <ul>
+            <li><a href="#"><i class="far fa-chevron-left"></i></a></li>
+            <li><a class="active" href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#"><i class="far fa-chevron-right"></i></a></li>
+          </ul>
+        </section>
+        <section class="contact">
+          <h2>Contact us</h2>
+          <form>
+            <div class="form-group">
+              <label for="firstName">YOUR NAME <span>*</span></label>
+              <input type="text" id="firstName" placeholder="First name">
+              <input type="text" id="lastName" placeholder="Last name">
+            </div>
+            <div class="form-group">
+              <label for="email">EMAIL ADDRESS <span>*</span></label>
+              <input type="email" id="email" placeholder="achraf@aissaoui.com">
+            </div>
+            <div class="form-group">
+              <label for="subject">SUBJECT</label>
+              <input type="text" id="subject" placeholder="Say hello">
+            </div>
+            <div class="form-group">
+              <label for="message">MESSAGE <span>*</span></label>
+              <textarea id="mmessage" placeholder="Please enter your message here"></textarea>
+            </div>
+            <button type="submit">Submit <i class="far fa-arrow-right"></i></button>
+          </form>
+        </section>
+      </div>
+      <section class="sidebar">
+        <aside class="search">
+          <div class="head">
+            <h2>Search <span>BLOG.</span></h2>
+          </div>
+          <div class="content">
+            <div class="form-group">
+              <input type="search" placeholder="here...">
+              <button><i class="fas fa-search"></i></button>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </aside>
+        <aside class="author-card"><img src="images/achraf.jpg">
+          <div class="content">
+            <h2>ACHRAF AISSAOUI</h2>
+            <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem and mauris neque quam blog. I want to share my world with you.</p>
+          </div>
+        </aside>
+        <aside class="connect">
+          <div class="head">
+            <h2>Stay connected</h2>
+          </div>
+          <div class="content">
+            <ul>
+              <li class="fb"><a href="#"><i class="fab fa-facebook-square"></i><span>Facebook</span></a></li>
+              <li class="insta"><a href="#"><i class="fab fa-instagram-square"></i><span>Instagram</span></a></li>
+              <li class="beha"><a href="#"><i class="fab fa-behance-square"></i><span>Behance</span></a></li>
+              <li class="twit"><a href="#"><i class="fab fa-twitter-square"></i>
+                  <snap>Twitter</snap></a></li>
+              <li class="git"><a href="#"><i class="fab fa-github-square"></i>
+                  <snap>GitHub</snap></a></li>
+              <li class="link"><a href="#"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a></li>
+              <li class="dribb"><a href="#"><i class="fab fa-dribbble-square"></i><span>Dribbble</span></a></li>
+              <li class="code"><a href="#"><i class="fab fa-codepen"></i><span>Codepen</span></a></li>
+            </ul>
+          </div>
+        </aside>
+        <aside class="cate">
+          <div class="head">
+            <h2>Categories</h2>
+          </div>
+          <div class="content">
+            <ul>
+              <li><a href="#"><i class="fas fa-boot"></i> Fashion</a></li>
+              <li><a href="#"><i class="fas fa-burger-soda"></i> Food</a></li>
+              <li><a href="#"><i class="fas fa-plane-departure"></i> Travel</a></li>
+              <li><a href="#"><i class="fas fa-music"></i> Music</a></li>
+              <li><a href="#"><i class="fas fa-tasks"></i> Life style</a></li>
+              <li><a href="#"><i class="fas fa-watch-fitness"></i> Fitness</a></li>
+              <li><a href="#"><i class="fas fa-futbol"></i> Sports</a></li>
+              <li><a href="#"><i class="fas fa-random"> </i> Kach haja</a></li>
+            </ul>
+          </div>
+        </aside>
+        <aside class="popular">
+          <div class="head">
+            <h2>Popular posts</h2>
+          </div>
+          <ul>
+            <li><a href="post.html">
+                <div class="thumb"><img src="images/workshop.jpg"></div>
+                <h3>Title heading</h3>
+                <p>Some words here</p>
+                <div class="clearfix"></div></a></li>
+            <li><a href="post.html">
+                <div class="thumb"><img src="images/gondol.jpg"></div>
+                <h3>Another title heading</h3>
+                <p>Chwiya klmat in english</p>
+                <div class="clearfix"></div></a></li>
+            <li><a href="post.html">
+                <div class="thumb"><img src="images/skies.jpg"></div>
+                <h3>Ya kho tiri bark</h3>
+                <p>My favorite rapper</p>
+                <div class="clearfix"></div></a></li>
+          </ul>
+        </aside>
+        <aside class="tags">
+          <div class="head">
+            <h2>Tags</h2>
+          </div>
+          <div class="content">
+            <ul>
+              <li><a href="#">Sarah</a></li>
+              <li><a href="#">Sports</a></li>
+              <li><a href="#">Games</a></li>
+              <li><a href="#">Travel</a></li>
+              <li><a href="#">New York</a></li>
+              <li><a href="#">London</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Family</a></li>
+              <li><a href="#">Love</a></li>
+              <li><a href="#">Baby</a></li>
+              <li><a href="#">Clothing</a></li>
+              <li><a href="#">Nike</a></li>
+              <li><a href="#">Adidas</a></li>
+            </ul>
+          </div>
+        </aside>
+        <aside class="news">
+          <div class="head">
+            <h2>Newsletter</h2>
+          </div>
+          <div class="content">
+            <p>Just me, myself and I, exploring the universe of uknownment.</p>
+            <div class="form-group">
+              <input type="email" placeholder="Enter your email address">
+              <button><i class="far fa-envelope"></i> Subscribe</button>
+            </div>
+          </div>
+        </aside>
+      </section>
+      <div class="clearfix"></div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="about">
+          <h2>BLOG.</h2>
+          <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem and mauris neque quam blog. I want to share my world with you.</p>
+        </div>
+        <div class="menu">
+          <h3>Important links</h3>
+          <ul>
+            <!--li
+            a(href="#")
+              i.far.fa-home
+              |  Home
+            -->
+            <li><a href="#"><i class="far fa-info"></i>About</a></li>
+            <li><a href="#"><i class="far fa-wrench"></i>Terms of Service</a></li>
+            <li><a href="#"><i class="far fa-lock"></i>Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="office">
+          <h3>Find your way</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i><span>Kamel Achref AISSAOUI</span>
+              <p>10010, Aomar Gare</p>
+              <p>Bouira, Algeria</p>
+            </li>
+            <li><i class="fas fa-envelope"></i>achr3012@gmail.com</li>
+            <li><i class="fas fa-phone-alt"></i>0560708090</li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="copy">
+        <p>Handcrafted by <a href="https://www.instagram.com/its__achraf/" target="_blank">AcHRaF</a><br><i class="far fa-copyright"></i> TwentyTwentyOne</p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+-
+  const siteName = "BLOG.",
+    article = {
+      title: "Lorem Ipsum is simply dummy text of the printing and industry.",
+      brief: "Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim.",
+      thumb: "bridge.jpg",
+      author: "achraf",
+      date: "26 June, 21",
+      category: "Travel",
+      tags: "one, two, three",
+      content: "<h3>What is Lorem Ipsum?</h3><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>" + "<img src='images/achraf.jpg'>" + "<h3>What is Lorem Ipsum?</h3><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>" + "<ul><li>One</li><li>Two</li><li>Three</li><li>Four</li></ul>"
+    }
+  
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title= siteName + " Article"
+    link(rel="preconnect" href="https://fonts.gstatic.com")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway&family=Staatliches&display=swap")
+    link(rel="stylesheet" href="css/fa-all.css")
+    link(rel="stylesheet" href="css/article.css")
+    
+  body
+
+    include templates/header
+
+    main.container
+      include templates/article
+      include templates/sidebar
+      .clearfix
+    
+    include templates/footer
+
+    script(src="js/script.js")

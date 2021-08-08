@@ -1,0 +1,109 @@
+.main
+  section.articles
+    .article
+      .thumb
+        img(src="images/bridge.jpg")
+      .content
+        h2.title TITLE HEADING
+        p.info
+          | Written by 
+          a(href="author.html") ACHRAF
+          |  in June 26, 2021
+        p.breaf Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim.
+        a(href="article1.html").more
+          | READ MORE 
+          i.far.fa-chevron-double-right
+        .comments
+          span.hide comments 
+          span.num 5
+    .article
+      .thumb
+        img(src="images/woods.jpg")
+      .content
+        h2.title ANOTHER TITLE HERE
+        p.info
+          | Written by 
+          a(href="author.html") ACHRAF
+          |  in April 7, 2020
+        p.breaf Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim.
+        a(href="article.html").more
+          | READ MORE 
+          i.far.fa-chevron-double-right
+        .comments
+          span.hide comments 
+          span.num 17
+    .article
+      .thumb
+        img(src="images/bridge.jpg")
+      .content
+        h2.title YAWEDDI TIRI BARK
+        p.info
+          | Written by 
+          a(href="author.html") KAMEL
+          |  in April 3, 2029
+        p.breaf Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim.
+        a(href="article.html").more
+          | READ MORE 
+          i.far.fa-chevron-double-right
+        .comments
+         span.hide comments 
+         span.num 23
+    .article
+      .thumb
+        img(src="images/woods.jpg")
+      .content
+        h2.title DIR TOUR DU MONDE BLA MAT9IS LBOTA
+        p.info
+          | Written by 
+          a(href="author.html") ACHRAF
+          |  in May 7, 2020
+        p.breaf Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim.
+        a(href="article.html").more
+          | READ MORE 
+          i.far.fa-chevron-double-right
+        .comments
+          span.hide comments 
+          span.num 301
+  
+  section.pagination
+    ul
+      li
+        a(href="#")
+          i.far.fa-chevron-left
+      li
+        a(href="#").active 1
+      li
+        a(href="#") 2
+      li
+        a(href="#") 3
+      li
+        a(href="#") 4
+      li
+        a(href="#") 5
+      li
+        a(href="#") 6
+      li
+        a(href="#")
+          i.far.fa-chevron-right
+  
+  section.contact
+    h2 Contact us
+    form
+      .form-group
+        label(for="firstName") YOUR NAME 
+          span *
+        input(type="text" id="firstName" placeholder="First name")
+        input(type="text" id="lastName" placeholder="Last name")
+      .form-group
+        label(for="email") EMAIL ADDRESS 
+          span *
+        input(type="email" id="email" placeholder="achraf@aissaoui.com")
+      .form-group
+        label(for="subject") SUBJECT
+        input(type="text" id="subject" placeholder="Say hello")
+      .form-group
+        label(for="message") MESSAGE 
+          span *
+        textarea(id="mmessage" placeholder="Please enter your message here")
+      button(type="submit") Submit 
+        i.far.fa-arrow-right

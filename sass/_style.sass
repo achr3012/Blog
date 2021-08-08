@@ -1,0 +1,363 @@
+
+$base-color: #121212
+$black-color: #343A40
+$white-color: #E1E8EB
+
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+.container
+  max-width: 90%
+  margin: 0 auto
+
+.clearfix
+  clear: both
+
+.hide
+  display: none
+
+img
+  width: 100%
+  user-select: none
+
+a
+  -webkit-tap-highlight-color: transparent
+
+input, textarea
+  &:hover, &:focus
+    outline: none
+body
+  background-color: #fafafa
+  //font-family: 'Staatliches', cursive
+  font-family: 'Raleway', sans-serif
+  color: $black-color
+
+
+.header
+  nav
+    background-color: $base-color
+    width: 100%
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 1
+    .container
+      
+      .logo
+        float: left
+        padding: 10px 0
+        display: block
+        
+        a
+          color: #fff
+          text-decoration: none
+          font-family: 'Staatliches', cursive
+          font-size: 2em
+
+      .toggle
+        float: right
+        width: 35px
+        cursor: pointer
+        margin-top: 10px
+        
+        .bar1, .bar2, .bar3
+          width: 100%
+          height: 6px
+          background-color: #fff
+          margin: 5.5px 0
+          transition: 0.3s
+        
+      .change
+        .bar1
+          transform: rotate(-45deg) translate(-8px, 8px)
+        .bar2
+          opacity: 0
+        .bar3
+          transform: rotate(45deg) translate(-8px, -8px)
+    
+    ul
+      display: none
+      li
+        a
+          display: block
+          color: #fff
+          text-decoration: none
+          font-weight: bold
+          padding: 20px
+          transition: .2s ease-in-out
+          
+          &:hover, &:focus
+            background-color: #fafafa
+            color: $base-color
+            padding-left: 30px
+
+  .hero
+    margin-top: 60px
+    height: 200px
+    text-align: center
+    
+    h1
+      padding: 50px 0 10px 0
+      font-family: 'Staatliches', cursive
+      font-weight: normal
+      font-size: 3em
+      letter-spacing: 2px
+    p
+      span
+        background-color: $base-color
+        color: #fff
+        padding: 2px 10px
+        border-radius: 2px
+
+
+
+.sidebar
+  aside
+    margin-bottom: 20px
+    box-shadow: 0px 0px 5px 2px rgba($black-color, .2)
+    .head
+      background-color: #E1E8EB
+      h2
+        font-size: 1.4em
+        padding: 15px
+        font-weight: normal
+    .content
+      padding: 15px
+  
+  .search
+    .form-group
+      input,button
+        float: left
+        padding: 10px
+        border: 3px solid $black-color
+        
+        &:hover, &:focus
+          border-color: $base-color
+      input
+        width: 80%
+      button
+        width: 20%
+        background-color: $black-color
+        color: #fff
+        
+        &:hover, &:focus
+          background-color: $base-color
+          border-color: $base-color
+  .author-card
+    img
+      display: block
+    h2
+      font-family: 'Staatliches', cursive
+      font-weight: normal
+      text-align: center
+      font-size: 2.3em
+      padding: 10px 0
+    p
+      line-height: 1.4
+      font-size: 1.1em
+  
+  .connect
+    ul li
+      list-style: none
+      display: inline-block
+      width: 32.3%
+      background-color: #eee
+      margin-bottom: 5px
+      
+      a
+        display: block
+        padding: 25px 0
+        text-align: center
+        text-decoration: none
+        color: $black-color
+        i
+          font-size: 2.5em
+          display: block
+        &:hover
+          color: #fff
+    .fb:hover
+        background-color: #1778f2
+    .insta:hover
+      background-color: #8a3ab9 //#fccc63
+    .beha:hover
+      background-color: #053eff
+    .twit:hover
+      background-color: #00acee
+    .git:hover
+      background-color: #f34f29
+    .link:hover
+      background-color: #0e76a8
+    .dribb:hover
+      background-color: #ea4c89
+    .code:hover
+      background-color: #000
+  
+  .cate
+    ul li
+      list-style: none
+      padding: 15px 0
+      a
+        color: $black-color
+        text-decoration: none
+        font-size: 1.1em
+        display: block
+        position: relative
+        
+        &:after
+          content: ""
+          position: absolute
+          width: 15%
+          height: 5px
+          left: 0
+          bottom: -5px
+          background-color: $black-color
+          border-top-right-radius: 5px
+          border-bottom-right-radius: 5px
+          transition: .2s ease-in-out
+        &:hover, &:focus
+          color: $base-color
+          
+        &:hover:after
+          background-color: $base-color
+          width: 40%
+  .popular
+    ul li
+      list-style: none
+      border-bottom: 1px solid #E1E8EB
+      a
+        text-decoration: none
+        display: block
+        padding: 15px
+        color: #000
+        
+        .thumb
+          width: 25%
+          float: left
+          margin-right: 10px
+
+        h3
+          display: block
+          padding: 14px 0 3px 0
+          font-weight: normal
+          font-size: 1.3em
+          
+        p
+          padding: 0px 0
+          font-size: .83em
+        &:hover, &:focus
+          background-color: #E1E8EB
+  
+  .tags
+    ul
+      li
+        list-style: none
+        display: inline-block
+
+        background-color: #eee
+        color: $black-color
+        font-size: .9em
+        padding: 4px 6px
+        margin: 3px 0
+        transition: .2s ease-in-out
+        &:hover, &:focus
+          background-color: $base-color
+          color: #fff
+  
+  .news
+    p
+      text-align: center
+    input, button
+      display: block
+      margin: 10px auto 0 auto
+      font-family: 'Raleway', sans-serif
+      transition: .2s ease-in-out
+    input
+      width: 97%
+      padding: 15px
+      border: 3px solid $black-color
+      text-align: center
+      &:hover, &:focus
+        width: 100%
+        border-color: $base-color
+    button
+      font-size: 1.1em
+      font-weight: bold
+      background-color: transparent
+      border: 3px solid $black-color
+      padding: 10px 15px
+      &:hover, &:focus
+        background-color: $base-color
+        border-color: $base-color
+        color: #fff
+
+footer
+  background-color: rgba($base-color, .8)
+  color: $white-color
+  .about, .menu, .office
+    padding: 10px 15px
+  .about
+    h2
+      font-family: 'Staatliches', cursive
+      font-size: 2em
+  .about, .menu
+    border-bottom: 1px solid $black-color
+    padding-bottom: 15px
+  .about h2, .menu h3, .office h3
+    font-weight: normal
+    padding: 10px 0
+    color: #fff
+  .menu h3, .office h3
+    font-size: 1.5em
+  .menu li, .office li
+    list-style: none
+    padding: 5px 10px
+  .menu i, .office i
+    width: 30px
+    text-align: center
+  .menu ul li
+    a
+      color: $white-color
+      text-decoration: none
+      &:hover
+        text-decoration: underline
+        color: #fff
+  .office ul li
+    p
+      padding-left: 30px
+  .copy
+    background-color: $base-color
+    padding: 25px 0
+    text-align: center
+    line-height: 1.6
+    a
+      font-weight: bold
+      color: #fff
+    span
+      display: block
+
+// Small devices (landscape phones, 576px and up)
+//@media (min-width: 576px)
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px)
+  .main
+    float: left
+    width: 66%
+    padding-right: 20px
+
+  .sidebar
+    float: right
+    width: 34%
+  .footer
+    .container
+      padding: 20px 0
+    .about, .menu, .office
+      float: left
+      width: 33.333%
+      border: none
+// Large devices (desktops, 992px and up)
+//@media (min-width: 992px)
+  
+  
