@@ -11,11 +11,18 @@
         width: 100%
     .content
       padding: 15px
+      
+      .cate
+        font-size: .75em
+        display: block
+        i
+          padding-right: 10px
       .title
-        padding-bottom: 5px
+        padding: 5px 0
         font-family: 'Staatliches', cursive
         font-weight: normal
         font-size: 2.3em
+        text-transform: uppercase
         &:hover
           color: $base-color
           transition: .2s ease-in-out
@@ -23,12 +30,13 @@
         font-size: .9em
         
         padding: 5px 0
-        a
-          color: $black-color
-          font-weight: bold
-          text-decoration: none
-          &:hover, &:focus
-            color: $base-color
+      .info a, .cate
+        color: $black-color
+        font-weight: bold
+        text-decoration: none
+        text-transform: uppercase
+        &:hover, &:focus
+          color: $base-color
         
       .breaf
         font-size: .95em
@@ -43,6 +51,7 @@
         font-weight: bold
         color: $black-color
         text-decoration: none
+        text-transform: uppercase
 
         i
           transform: scale(.8)
@@ -54,6 +63,9 @@
         bottom: 30px
         right: 20px
         font-weight: bold
+        @media (min-width: 768px)
+          .hide
+            display: inline
         span.num
           background-color: $base-color
           color: #fff
@@ -153,13 +165,11 @@
         background-color: $base-color
         color: #fff
     @media (min-width: 768px)
-      .article .comments .hide
-        display: inline
-      .contact #firstName
+      #firstName
          width: 47%
          margin-right: 5%
-      .contact #lastName
+      #lastName
         width: 47%
-      .contact textarea
+      textarea
         min-height: 150px
       

@@ -164,7 +164,7 @@ body {
 .sidebar .connect ul li {
   list-style: none;
   display: inline-block;
-  width: 32.3%;
+  width: 49%;
   background-color: #eee;
   margin-bottom: 5px;
 }
@@ -176,7 +176,7 @@ body {
   color: #343A40;
 }
 .sidebar .connect ul li a i {
-  font-size: 2.5em;
+  font-size: 2.4em;
   display: block;
 }
 .sidebar .connect ul li a:hover {
@@ -253,12 +253,11 @@ body {
 }
 .sidebar .popular ul li a h3 {
   display: block;
-  padding: 14px 0 3px 0;
+  padding: 5px 0;
   font-weight: normal;
   font-size: 1.3em;
 }
 .sidebar .popular ul li a p {
-  padding: 0px 0;
   font-size: 0.83em;
 }
 .sidebar .popular ul li a:hover, .sidebar .popular ul li a:focus {
@@ -369,13 +368,13 @@ footer .copy span {
 @media (min-width: 768px) {
   .main {
     float: left;
-    width: 66%;
+    width: 70%;
     padding-right: 20px;
   }
 
   .sidebar {
     float: right;
-    width: 34%;
+    width: 30%;
   }
 
   .footer .container {

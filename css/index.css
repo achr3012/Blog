@@ -164,7 +164,7 @@ body {
 .sidebar .connect ul li {
   list-style: none;
   display: inline-block;
-  width: 32.3%;
+  width: 49%;
   background-color: #eee;
   margin-bottom: 5px;
 }
@@ -176,7 +176,7 @@ body {
   color: #343A40;
 }
 .sidebar .connect ul li a i {
-  font-size: 2.5em;
+  font-size: 2.4em;
   display: block;
 }
 .sidebar .connect ul li a:hover {
@@ -253,12 +253,11 @@ body {
 }
 .sidebar .popular ul li a h3 {
   display: block;
-  padding: 14px 0 3px 0;
+  padding: 5px 0;
   font-weight: normal;
   font-size: 1.3em;
 }
 .sidebar .popular ul li a p {
-  padding: 0px 0;
   font-size: 0.83em;
 }
 .sidebar .popular ul li a:hover, .sidebar .popular ul li a:focus {
@@ -369,13 +368,13 @@ footer .copy span {
 @media (min-width: 768px) {
   .main {
     float: left;
-    width: 66%;
+    width: 70%;
     padding-right: 20px;
   }
 
   .sidebar {
     float: right;
-    width: 34%;
+    width: 30%;
   }
 
   .footer .container {
@@ -399,11 +398,19 @@ footer .copy span {
 .main .article .content {
   padding: 15px;
 }
+.main .article .content .cate {
+  font-size: 0.75em;
+  display: block;
+}
+.main .article .content .cate i {
+  padding-right: 10px;
+}
 .main .article .content .title {
-  padding-bottom: 5px;
+  padding: 5px 0;
   font-family: "Staatliches", cursive;
   font-weight: normal;
   font-size: 2.3em;
+  text-transform: uppercase;
 }
 .main .article .content .title:hover {
   color: #121212;
@@ -413,12 +420,13 @@ footer .copy span {
   font-size: 0.9em;
   padding: 5px 0;
 }
-.main .article .content .info a {
+.main .article .content .info a, .main .article .content .cate {
   color: #343A40;
   font-weight: bold;
   text-decoration: none;
+  text-transform: uppercase;
 }
-.main .article .content .info a:hover, .main .article .content .info a:focus {
+.main .article .content .info a:hover, .main .article .content .info a:focus, .main .article .content .cate:hover, .main .article .content .cate:focus {
   color: #121212;
 }
 .main .article .content .breaf {
@@ -434,6 +442,7 @@ footer .copy span {
   font-weight: bold;
   color: #343A40;
   text-decoration: none;
+  text-transform: uppercase;
 }
 .main .article .content .more i {
   transform: scale(0.8);
@@ -446,6 +455,11 @@ footer .copy span {
   bottom: 30px;
   right: 20px;
   font-weight: bold;
+}
+@media (min-width: 768px) {
+  .main .article .content .comments .hide {
+    display: inline;
+  }
 }
 .main .article .content .comments span.num {
   background-color: #121212;
@@ -561,17 +575,14 @@ footer .copy span {
   color: #fff;
 }
 @media (min-width: 768px) {
-  .main .contact .article .comments .hide {
-    display: inline;
-  }
-  .main .contact .contact #firstName {
+  .main .contact #firstName {
     width: 47%;
     margin-right: 5%;
   }
-  .main .contact .contact #lastName {
+  .main .contact #lastName {
     width: 47%;
   }
-  .main .contact .contact textarea {
+  .main .contact textarea {
     min-height: 150px;
   }
 }
