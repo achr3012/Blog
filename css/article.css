@@ -387,9 +387,6 @@ footer .copy span {
     border: none;
   }
 }
-.main {
-  margin-bottom: 20px;
-}
 .main .article {
   background: #fff;
   padding: 20px;
@@ -405,6 +402,7 @@ footer .copy span {
 }
 .main .article .info {
   padding: 10px;
+  font-size: 0.8em;
 }
 .main .article .info .by a {
   color: #000;
@@ -435,7 +433,7 @@ footer .copy span {
 }
 .main .article .content {
   padding: 10px 0px;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 .main .article .content h3 {
   padding: 20px 0px 5px 0;
@@ -443,14 +441,52 @@ footer .copy span {
 }
 .main .article .content img {
   display: block;
-  margin: 15px 0;
-  border-radius: 10px;
+  border: 5px solid #121212;
+  margin: 10px auto;
+  padding: 5px;
 }
 .main .article .content p {
   padding: 5px 0;
 }
 .main .article .content ul {
-  padding: 10px 0 10px 50px;
+  padding: 10px 0 10px 40px;
+}
+.main .comments {
+  padding: 20px 0;
+}
+.main .comments h2 {
+  padding: 15px 5px;
+  font-size: 2em;
+  text-shadow: 0.5px 1.5px 2px rgba(52, 58, 64, 0.2);
+}
+.main .comments .comment {
+  background: #fff;
+  box-shadow: 0px 1px 3px 2px rgba(52, 58, 64, 0.1);
+  margin: 10px 0;
+}
+.main .comments .comment .avatar {
+  float: left;
+  width: 100px;
+}
+.main .comments .comment .content {
+  float: left;
+  width: calc(100% - 100px);
+  padding: 10px 15px 10px 20px;
+}
+.main .comments .comment .content a {
+  color: #343A40;
+  font-size: 1.2em;
+  display: block;
+}
+.main .comments .comment .content .date {
+  color: #666;
+  font-size: 0.7em;
+  padding: 5px 0;
+  display: inline-block;
+}
+.main .comments .comment .content p {
+  font-size: 0.9em;
+  color: #444;
 }
 
 /*# sourceMappingURL=article.css.map */

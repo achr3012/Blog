@@ -1,7 +1,6 @@
 @import style
 
 .main
-  margin-bottom: 20px
   .article
     background: #fff
     padding: 20px
@@ -17,7 +16,7 @@
     
     .info
       padding: 10px
-        
+      font-size: .8em
       .by
         a
           color: #000
@@ -47,7 +46,7 @@
     .content
       padding: 10px 0px
       
-      line-height: 1.4
+      line-height: 1.5
       
       h3
         padding: 20px 0px 5px 0
@@ -55,11 +54,53 @@
       
       img
         display: block
-        margin: 15px 0
-        border-radius: 10px
+        border: 5px solid $base-color
+        margin: 10px auto
+        padding: 5px
       
       p
         padding: 5px 0
       
       ul
-        padding: 10px 0 10px 30px
+        padding: 10px 0 10px 40px
+
+  .comments
+    padding: 20px 0
+    
+    h2
+      padding: 15px 5px
+      font-size: 2em
+      text-shadow: .5px 1.5px 2px rgba($black-color, .2)
+    
+    .comment
+      background: #fff
+      box-shadow: 0px 1px 3px 2px rgba($black-color, .1)
+      margin: 10px 0
+      
+      .avatar
+        float: left
+        width: 100px
+        
+        
+      .content
+        float: left
+        width: calc(100% - 100px)
+        padding: 10px 15px 10px 20px
+        a
+          color: $black-color
+          font-size: 1.2em
+          display: block
+
+        .date
+          color: #666
+          font-size: .7em
+          padding: 5px 0
+          display: inline-block
+        p
+          font-size: .9em
+          color: #444
+      
+      
+
+
+
