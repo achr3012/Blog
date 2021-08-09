@@ -1,0 +1,36 @@
+-
+  const siteName = "BLOG.",
+    article = {
+      title: "Simple article heading here",
+      brief: "Mauris neque quam, fermentum ut nisl vitae, convallis maximus.",
+      thumb: "woods.jpg",
+      author: "Kamel",
+      date: "09 July, 21",
+      category: "Sport",
+      tags: "Anything/tags",
+      content: "<h3>The first simple inside heading</h3><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>" + "<img src='images/guy1.jpg'>" + "<h3>This is the second heading</h3><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>" + "<ul><li>Sammsung</li><li>Apple</li><li>Google</li><li>Facebook</li></ul>"
+    }
+  
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title= siteName + " Article"
+    link(rel="preconnect" href="https://fonts.gstatic.com")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway&family=Staatliches&display=swap")
+    link(rel="stylesheet" href="css/fa-all.css")
+    link(rel="stylesheet" href="css/article.css")
+    
+  body
+
+    include templates/header
+
+    main.container
+      include templates/article
+      include templates/sidebar
+      .clearfix
+    
+    include templates/footer
+
+    script(src="js/script.js")
